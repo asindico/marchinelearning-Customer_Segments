@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11837,7 +11837,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11998,7 +11998,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12128,7 +12128,7 @@ The first customer buy more grocery and detergent papers than the 75 percentile 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12156,6 +12156,14 @@ The first customer buy more grocery and detergent papers than the 75 percentile 
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  &#34;This module will be removed in 0.20.&#34;, DeprecationWarning)
+</pre>
+</div>
+</div>
 
 <div class="output_area"><div class="prompt"></div>
 
@@ -12255,7 +12263,7 @@ I have tried with all the features and eventually chose Grocery which is the one
 <p><strong>Answer</strong>
 Grocery gets a prediction score of 0.68</p>
 <p><strong>Question 2.3 - Is this feature necessary for identifying customers' spending habits? </strong></p>
-<p>Grocery is the feature that is easier to predict with the others. So I think it has some correlates somehow with some of the other feature variations. I thus think it is a necessary feature for identifying the customer's spending habits.</p>
+<p>Grocery is the feature that is easier to predict with the others. So I think it correlates somehow with some of the other feature variations. This means the feature provides information which is somehow provided by one or more of other features making it leass interesting and necesary for identifying customer's spending habits.</p>
 
 </div>
 </div>
@@ -12272,7 +12280,7 @@ Grocery gets a prediction score of 0.68</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14832,6 +14840,7 @@ KIqSMv8fleE3z1y+k70AAAAASUVORK5CYII=
 The pairs I found confirm the relevance of the feature I tried to predict.</p>
 <p><strong>Question 3.3 - How is the data for those features distributed ? </strong></p>
 <p>detergents paper, grocery and milk seem to be strongly related. This is coherent with the relevance of the feature I attempted to predict. For these features data tend to ditribute linearly which means when a feature increase the others increase too with similar percentage.</p>
+<p>Data distribution appears to be positive (right) skewed meaning they follow a logarithmic function. This means that we can apply a log transformation in order to have a normal distribution of the data.</p>
 
 </div>
 </div>
@@ -14863,7 +14872,7 @@ The pairs I found confirm the relevance of the feature I tried to predict.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -20473,7 +20482,7 @@ oiiKoiiKomQB2sijKIqiKIqiKIqiKIqSBfx/ntL30or4NpYAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -20564,7 +20573,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -21278,7 +21287,7 @@ For instance:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -21910,8 +21919,11 @@ EklEQVSSakwaSZIkSZIkqeb/AMx4pmh4GWqvAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-the first and the second principal component explain more of th 70% of the total variance. the first four principal components explain 93.14% of the total variance.
-It seems the 3 main features explaining most of the variace are Detergents_Paper, Grocery and Milk. This confirms the previous observations.</p>
+the first and the second principal component explain more of th 70% of the total variance. the first four principal components explain 93.14% of the total variance.</p>
+<p>Dimension 1 is chracterized by Milk, Grocedy and Detergents paper which confirms the previous observitions about the correlation of these features. This dimension could represent food reatailers and supermarkets.</p>
+<p>Dimension 2 is characterized by Fresh, Frozen and Delicatessen which again confirms the previous observations about the correlation of these features and could represent customers like resturants, cafés that use goods to prepare fresh foods for their customers.</p>
+<p>Dimension 3 is characterized  by  delicatessen (0.7), Frozen (almost 0.4) and a strong inverse relationship with Fresh itself palying a principal role in characterizing the variance of this dimension (about -0.7). It could be representative of a more specific kind of retailer like fresh markets.</p>
+<p>Dimension 4 is  mainly characterized  by Frozen (about 0.8) inversely related with delicatessen (about -0.6). It could be representative of a more specific kind of retailer specialized on frozen goods.</p>
 
 </div>
 </div>
@@ -23822,7 +23834,7 @@ JEmSJFWk/w+D3opbhuhkZwAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-K-means is a fast and easy to understand clustering algorithm. The main differences with the Gaussian Mixture Model are that K-means only create spherical/circular clusters, while GMM can create clusters with elliptical shapes, and that in K-means an individual can belong to one cluster only, while in GMM it can belong to more clusters with different likelihood.</p>
+K-means is a fast and easy to understand clustering algorithm. The main differences with the Gaussian Mixture Model are that K-means only create spherical/circular clusters, while GMM can create clusters with elliptical shapes, and that in K-means an individual can belong to one cluster only, while in GMM it can belong to more clusters with different likelihood. K-Means is widely considered to be the first attempt in trying to clusterize data moreover from the BiPlot we can appreciate how data appears to be easily saparable into two groups. I therefore choose to use K-Means as a first attempt and check out whether the obtained result is satysfing or not.</p>
 
 </div>
 </div>
@@ -23932,6 +23944,7 @@ K-means is a fast and easy to understand clustering algorithm. The main differen
 <li>4 clusters scored 0.332</li>
 <li>5 clusters scored 0.350</li>
 </ul>
+<p>As expected 2 clusters obtain the highest silhouette score.</p>
 
 </div>
 </div>
@@ -25360,6 +25373,7 @@ Sample point 2 predicted to be in Cluster 1
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 We can't assume changing from a 5 days to a 3 days a week delivery service would affect equally all the customers. We have identified two classes of customers showing different needs one of which includes lot of fresh foods (segment 0). We can therefore assume this segment would be more negatively affected by this change and I would suggest to apply it to Segment 1 which identifies supermarket, and goods retailer in general which do not deal with goods that can go bad.</p>
+<p>In order to measure how much a change in the delivery frequency would be appreciated by the two groups apply an A/B test selecting a small but statistically significant sample of customers from each cluster and using others as the control group. We could apply the changed schedule (3 days - Service A) to the sample, provided them satisfaction surveys and compared the result with the other customers of the same cluster (control group) that continued with the old schedule (5 days - Service B).</p>
 
 </div>
 </div>
@@ -26571,7 +26585,7 @@ kiRJkiRJypn/Dw2YBinfGp5fAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The channel information finally confirms all the hypothesis and analysis showing to be the actual features that divide customers so well into two groups.</p>
+The channel information finally confirms all the hypothesis and analysis showing to be the actual features that divide customers so well into two groups. Although there is an overlap among the two groups and some individuals of a group alls into the cluster of the other group (i.e. there are retailers that shows purchase behaviors similar to restaurants and viceversa) they are very few compared to the total number of individuals and can be considered a tolerable error in the attempt to clusterize the phaenomenon.</p>
 
 </div>
 </div>
